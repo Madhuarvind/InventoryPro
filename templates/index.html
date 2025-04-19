@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scan Product</title>
+    <script>
+        function scanBarcode() {
+            fetch('/scan')
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    document.getElementById("result").innerHTML = `
+                        <h3>✅ Product Found</h3>
+                        <p><strong>Name:</strong> ${data.product.name}</p>
+                        <p><strong>Category:</strong> ${data.product.category}</p>
+                        <p><strong>Price:</strong> ₹${data.product.price}</p>
+                        <p><strong>Quantity:</strong> ${data.product.quantity}</p>
+                    `;
+                } else {
+                    document.getElementById("result").innerHTML = `<h3>${data.message}</h3>`;
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Scan Product</h1>
+    <button onclick="scanBarcode()">Scan</button>
+    <div id="result"></div>
+</body>
+</html>

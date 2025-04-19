@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "tecnickcom/tcpdf": "^6.8",
+        "dompdf/dompdf": "^3.1",
+        "razorpay/razorpay": "^2.9",
+        "endroid/qr-code": "^6.0",
+        "chillerlan/php-qrcode": "^5.0"
+    }
+}
