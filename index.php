@@ -500,8 +500,8 @@
                 <div class="col-md-4">
                     <h3 class="footer-title">Contact Us</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Inventory Street, Suite 456</li>
-                        <li><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Karur,Tamil Nadu</li>
+                        <li><i class="fas fa-phone me-2"></i> 7904235240</li>
                         <li><i class="fas fa-envelope me-2"></i> info@inventorypro.com</li>
                     </ul>
                 </div>

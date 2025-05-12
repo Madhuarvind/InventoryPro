@@ -416,8 +416,16 @@ while ($row = $avg_order_result->fetch_assoc()) {
 <body>
 
 <!-- Sidebar -->
+<!-- Sidebar -->
 <div class="sidebar position-fixed">
-    <h3 class="text-center text-white">Admin Panel</h3>
+    <!-- Logo Section -->
+    <div class="logo text-center mb-4">
+        <img src="logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-top me-2">
+        <span class="text-white" style="font-size: 24px; font-weight: bold;">InventoryPro</span> <!-- Increase font size -->
+    </div>
+    <!-- Admin Panel Heading -->
+    <h3 class="text-center text-white">InventoryPro - Admin Panel</h3>
+
     <ul class="sidebar-menu">
         <li><a href="dashboard.php"><i class="fas fa-chart-bar" style="color: #f39c12;"></i> Dashboard</a></li>
 
@@ -473,7 +481,7 @@ while ($row = $avg_order_result->fetch_assoc()) {
         <i class="fas fa-chart-line" style="color: #e67e22;"></i> Sales Prediction
     </a>
 </li>
-        <li><a href="analytics.php"><i class="fas fa-chart-line" style="color: #2c3e50;"></i> Advanced Analytics</a></li>
+<li><a href="analytics.php"><i class="fas fa-chart-line" style="color: #e74c3c;"></i> Advanced Analytics</a></li>
 
         <li><a href="scan_barcode.php"><i class="fas fa-barcode" style="color: #e67e22;"></i> Barcode Scan</a></li>
         <li><a href="user.php"><i class="fas fa-user" style="color: #16a085;"></i> Manage Users</a></li>
